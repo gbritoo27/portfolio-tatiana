@@ -1,23 +1,15 @@
 <template>
   <b-navbar toggleable="md" class="navbar" ref="navbar">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand href="#" to="/" class="brand">
       <img src="@/assets/images/logo.svg" alt="" />
     </b-navbar-brand>
+    <!-- <b-navbar-toggle target="nav_collapse"></b-navbar-toggle> -->
 
     <b-collapse is-nav id="nav_collapse">
-      <b-navbar-nav class="justify-content-center text-right">
+      <b-navbar-nav class="ml-auto justify-content-center text-right">
         <router-link to="/">Projects</router-link>
         <router-link to="/about">About</router-link>
       </b-navbar-nav>
-
-      <!-- 
-      <b-navbar-nav class="ml-auto">
-        <a href="#" class="nav-btn">
-          Follow Me
-        </a>
-      </b-navbar-nav> 
-      -->
     </b-collapse>
   </b-navbar>
 </template>
@@ -78,6 +70,21 @@ export default {}
 
   img {
     height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    margin: auto;
+  }
+
+  .navbar-collapse {
+    display: block !important;
+    margin-top: 25px;
+
+    .justify-content-center {
+      text-align: center !important;
+    }
   }
 }
 </style>
