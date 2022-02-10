@@ -24,7 +24,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.0.1",
     "stylelint": "^12.0.0",
     "stylelint-config-recess-order": "^2.0.3",
